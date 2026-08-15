@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clone educacional inspirado na HBO Max, desenvolvido com HTML e CSS para o desafio final da formação CSS da DIO.">
+  <title>HBO Max — Desafio DIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="menu">
+    <a class="brand" href="#top" aria-label="Página inicial HBO Max">
+      <img src="assets/hbomax-logo.svg" alt="HBO Max">
+    </a>
+
+    <div class="menu__actions">
+      <a class="menu__link" href="login.html">Entrar</a>
+      <a class="button button--small" href="#plans">Assine agora</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero__content container">
+      <div class="channels" aria-label="Marcas disponíveis na plataforma">
+        <img src="assets/hbo.svg" alt="HBO">
+        <img src="assets/dc.svg" alt="DC">
+        <img src="assets/wb.svg" alt="Warner Bros.">
+        <img src="assets/cn.svg" alt="Cartoon Network">
+        <img src="assets/max.svg" alt="Max Originals">
+      </div>
+
+      <p class="eyebrow">Filmes, séries e histórias para todos</p>
+      <h1>Todo o entretenimento que você gosta em um só lugar.</h1>
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="offer">
+        <span>Planos a partir de</span>
+        <strong>R$ 19,90 <small>/mês*</small></strong>
+      </div>
+
+      <a class="button button--gradient hero__cta" href="#plans">Escolha seu plano</a>
+      <p class="legal-text">*Valor ilustrativo utilizado apenas para fins educacionais.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="plans section" id="plans">
+      <div class="container">
+        <p class="eyebrow">Planos</p>
+        <h2>Escolha como você quer assistir</h2>
+        <p class="section__intro">Compare as opções e escolha a experiência que combina melhor com você.</p>
+
+        <div class="plans__grid">
+          <article class="plan-card">
+            <div>
+              <div class="plan-card__header">
+                <h3>Mobile</h3>
+                <p class="price">R$ 19,90 <span>/mês</span></p>
+              </div>
+              <ul>
+                <li>Assista em smartphones e tablets.</li>
+                <li>1 tela por vez.</li>
+                <li>Qualidade adaptada ao dispositivo.</li>
+                <li>Downloads para assistir offline.</li>
+              </ul>
+            </div>
+            <a class="button button--gradient" href="#contents">Escolher Mobile</a>
+          </article>
+
+          <article class="plan-card plan-card--featured">
+            <span class="plan-card__badge">Mais completo</span>
+            <div>
+              <div class="plan-card__header">
+                <h3>Multitelas</h3>
+                <p class="price">R$ 27,90 <span>/mês</span></p>
+              </div>
+              <ul>
+                <li>Assista em diferentes dispositivos.</li>
+                <li>Até 3 telas ao mesmo tempo.</li>
+                <li>Conteúdo em alta definição.</li>
+                <li>Até 5 perfis diferentes.</li>
+                <li>Downloads para assistir offline.</li>
+              </ul>
+            </div>
+            <a class="button button--gradient" href="#contents">Escolher Multitelas</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contents section" id="contents">
+      <div class="container">
+        <p class="eyebrow">Conteúdos</p>
+        <h2>Descubra novos universos</h2>
+        <p class="section__intro">Passe o mouse pelos cards para descobrir uma segunda composição visual.</p>
+
+        <div class="contents__grid">
+          <article class="content-card" style="--cover: url('assets/hbo-card.svg'); --hover-cover: url('assets/hbo-card-hover.svg');">
+            <span class="sr-only">Conteúdos HBO</span>
+          </article>
+          <article class="content-card" style="--cover: url('assets/max-card.svg'); --hover-cover: url('assets/max-card-hover.svg');">
+            <span class="sr-only">Max Originals</span>
+          </article>
+          <article class="content-card" style="--cover: url('assets/dc-card.svg'); --hover-cover: url('assets/dc-card-hover.svg');">
+            <span class="sr-only">Conteúdos DC</span>
+          </article>
+          <article class="content-card" style="--cover: url('assets/wb-card.svg'); --hover-cover: url('assets/wb-card-hover.svg');">
+            <span class="sr-only">Warner Bros.</span>
+          </article>
+          <article class="content-card" style="--cover: url('assets/cn-card.svg'); --hover-cover: url('assets/cn-card-hover.svg');">
+            <span class="sr-only">Cartoon Network</span>
+          </article>
+          <article class="content-card" style="--cover: url('assets/champions-card.svg'); --hover-cover: url('assets/champions-card-hover.svg');">
+            <span class="sr-only">Esportes</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <a href="#contents">Agora na HBO Max</a>
+        <a href="#contents">Em breve</a>
+        <a href="#contents">Filmes</a>
+        <a href="#contents">Séries</a>
+        <a href="login.html">Entrar</a>
+      </nav>
+      <p>Projeto educacional desenvolvido para o desafio final da Formação CSS da DIO.</p>
+      <p class="footer__author">Davi Inacio</p>
+    </div>
+  </footer>
+</body>
+</html>
