@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar — HBO Max</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-page">
+  <nav class="menu">
+    <a class="brand" href="index.html" aria-label="Voltar para a página inicial">
+      <img src="assets/hbomax-logo.svg" alt="HBO Max">
+    </a>
+    <a class="menu__link" href="index.html">Voltar</a>
+  </nav>
+
+  <main class="login-main">
+    <section class="login-card" aria-labelledby="login-title">
+      <p class="eyebrow">Bem-vindo de volta</p>
+      <h1 id="login-title">Entrar</h1>
+      <p class="login-card__intro">Use seus dados para acessar sua conta.</p>
+
+      <form class="login-form">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+        <button class="button button--gradient" type="submit">Entrar</button>
+      </form>
+
+      <a class="login-card__help" href="#">Esqueceu a senha?</a>
+    </section>
+  </main>
+</body>
+</html>
